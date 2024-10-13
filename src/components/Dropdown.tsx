@@ -1,4 +1,4 @@
-"use client"; // Add this line at the top
+"use client";
 
 import { useState } from "react";
 
@@ -11,13 +11,12 @@ const Dropdown = () => {
   };
 
   const handleOptionClick = (option: any) => {
-    setSelectedOption(option); // Update the selected option
-    setIsOpen(false); // Close the dropdown after selecting
+    setSelectedOption(option);
+    setIsOpen(false);
   };
 
   return (
     <div className="relative hidden lg:block">
-      {/* Dropdown Trigger */}
       <button
         onClick={toggleDropdown}
         className="text-white px-4 py-2 rounded-md flex items-center"
@@ -37,7 +36,6 @@ const Dropdown = () => {
         </svg>
       </button>
 
-      {/* Dropdown Menu */}
       {isOpen && (
         <div className="absolute mt-2 w-48 rounded-md  ring-1 ring-black ring-opacity-5">
           <div className="py-2 bg-white">

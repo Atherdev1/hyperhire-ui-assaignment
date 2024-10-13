@@ -8,7 +8,7 @@ const HeroCard = (props: Props) => {
   return (
     <>
       <div className="bg-gradient-to-r from-cyan-500 to-blue-500 flex flex-col">
-        {/* Above 1200px layout */}
+        
         <div className="hidden xl:flex">
           <div className="w-3/5">
             <div className="grid grid-rows-4 grid-cols-[40%,60%] gap-0 items-start">
@@ -87,7 +87,7 @@ const HeroCard = (props: Props) => {
             <ProfileCarousel />
           </div>
         </div>
-        {/* Below 1200px (only the carousel and specific text are visible) */}
+       
         <div className="xl:hidden flex flex-col items-center p-4">
           <p className="text-[28px] font-black text-white text-center mb-4">
             최고의 실력을 가진 <br />
@@ -102,14 +102,14 @@ const HeroCard = (props: Props) => {
         </div>
 
         <div className="flex">
-          {/* Left section will be hidden below 1200px */}
+        
           <div className="w-[24%] p-4 hidden xl:block">
             <div className="p-4 text-right text-yellow-300 font-black">
               FadeInUp (duration 500ms)
             </div>
           </div>
 
-          {/* Chips section will remain visible across all screen sizes */}
+         
           <div className="w-full xl:w-[76%] p-4">
             <div className="flex overflow-x-auto gap-[10px] no-scrollbar">
               <div className="bg-white bg-opacity-20 rounded-[16px] p-4 border-none flex items-center gap-x-4 min-w-[300px]">

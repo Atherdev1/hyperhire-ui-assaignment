@@ -1,5 +1,4 @@
-"use client"; // Add this line at the top
-
+"use client";
 import { useState } from "react";
 import profile from "../images/profile.svg";
 import Image from "next/image";
@@ -10,23 +9,19 @@ const Carousel = () => {
   const ProfileCard = () => {
     return (
       <div className="bg-white shadow-lg rounded-lg p-6 max-w-sm mx-auto h-full">
-        {/* Profile Image */}
         <div className="relative flex justify-center">
           <Image
-            src={profile} 
+            src={profile}
             alt="Profile Image"
             className="rounded-full w-24 h-24 object-cover"
           />
-         
         </div>
 
-        {/* Name and Role */}
         <div className="text-center mt-10">
           <h2 className="text-xl font-bold">Abhishek Gupta</h2>
           <p className="text-blue-500 font-semibold mt-1">마케팅 • 2y+</p>
         </div>
 
-        {/* Skills */}
         <div className="flex flex-wrap justify-center mt-16 space-x-2">
           <span className="bg-gray-100 text-gray-800 text-sm font-medium px-3 py-1 rounded-full">
             마케팅 콘텐츠 제작
@@ -72,7 +67,6 @@ const Carousel = () => {
 
   return (
     <div className="relative w-full h-4/6">
-      {/* Carousel Container */}
       <div className="overflow-hidden h-full">
         <div
           className="flex transition-transform duration-500 ease-in-out h-full"
@@ -86,9 +80,7 @@ const Carousel = () => {
         </div>
       </div>
 
-      {/* Navigation Buttons */}
       <div>
-        {/* Previous Button */}
         <button
           onClick={prevSlide}
           className="absolute top-1/2 left-0 transform -translate-y-1/2  text-white px-4 py-2 rounded-md"
@@ -96,7 +88,6 @@ const Carousel = () => {
           &#10094;
         </button>
 
-        {/* Next Button */}
         <button
           onClick={nextSlide}
           className="absolute top-1/2 right-0 transform -translate-y-1/2  text-white px-4 py-2 rounded-md"

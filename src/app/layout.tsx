@@ -26,7 +26,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Update the title */}
         <title>Hyperhire</title>
         <link rel="icon" type="image/png" href="/favicon.png" />
       </head>
